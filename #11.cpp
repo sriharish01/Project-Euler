@@ -32,20 +32,20 @@ int main() {
                  if(s>s3)
                     s3=s;}
     
-           /* for(i=3;i<20;i++)
+           for(i=0;i<17;i++)
             for(j=3;j<20;j++)
                 {
                  s=a[i][j]*a[i+1][j-1]*a[i+2][j-2]*a[i+3][j-3];
                  if(s>s4)
-                    s4=s;}*/
+                    s4=s;}
     
-           if(s1>=s2&&s1>=s3)
+           if(s1>=s2&&s1>=s3&&s1>=s4)
                cout<<s1;
-           else if(s2>=s1 && s2>=s3)
+           else if(s2>=s1 && s2>=s3&&s2>=s4)
                cout<<s2;
-           //else if(s3>=s1 && s3>=s2&&s3>=s4)
-             //  cout<<s3;
+           else if(s3>=s1 && s3>=s2&&s3>=s4)
+              cout<<s3;
            else 
-               cout<<s3;
+               cout<<s4;
     return 0;
 }
